@@ -6,8 +6,7 @@ const getUserNames = (users) => {
   return (names)
 }
 
-console.log (
-  getUserNames ([
+console.log (getUserNames ([
   {
     name : "Moore Hensley" ,
     email : "moorehensley@indexia.com" ,
