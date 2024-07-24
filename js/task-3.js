@@ -1,7 +1,8 @@
 'use strict';
 
 const sortByDescendingFriendCount = (users) => {
-  
+  const result = users.toSorted((firstFriends, secondFriends) => secondFriends.friends.length - firstFriends.friends.length)
+  return result
 }
 
 
@@ -45,13 +46,12 @@ console.log(sortByDescendingFriendCount([
       friends: ["Goldie Gentry", "Briana Decker"],
       gender: "female"
     }
-  ])
-);
+  ]));
 // [{
 //     name: "Ross Vazquez",
 //     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
 //     gender: "male"
-//   },
+//   }, 
 //   {
 //     name: "Sharlene Bush",
 //     friends: ["Briana Decker", "Sharron Pace"],
@@ -82,3 +82,4 @@ console.log(sortByDescendingFriendCount([
 //     friends: ["Sharron Pace"],
 //     gender: "male"
 //   }]
+
